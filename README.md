@@ -15,6 +15,12 @@ sudo chmod +x ./install
 sudo ./install auto
 ```
 
+
+    
+
+
+
+
 Check if CodeDeploy agent is running:
 ```
 sudo service codedeploy-agent status
