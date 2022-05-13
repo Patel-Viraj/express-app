@@ -16,6 +16,17 @@ sudo ./install auto
 ```
 
 
+#!/bin/bash 
+sudo apt-get update -y
+sudo apt-get -y install ruby
+sudo apt-get -y install wget
+cd /home/ubuntu 
+wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
+sudo chmod +x ./install 
+sudo ./install auto
+sudo apt install nginx
+sudo ufw allow 'Nginx HTTP'
+sudo service codedeploy-agent start
     
 
 
