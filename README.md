@@ -24,9 +24,10 @@ cd /home/ubuntu
 wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 sudo chmod +x ./install 
 sudo ./install auto
-sudo apt install nginx
+sudo apt install nginx -y
+sudo service nginx start
 sudo ufw allow 'Nginx HTTP'
-sudo service codedeploy-agent start
+sudo service codedeploy-agent start 
     
 
 
