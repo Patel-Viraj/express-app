@@ -1,4 +1,16 @@
+# nodejs-express-on-aws-ec2
 
+This repo hosts the source code for my YouTube tutorial on CI/CD from Github to an AWS EC2 instance via CodePipeline and CodeDeploy (https://www.youtube.com/watch?v=Buh3GjHPmjo). This tutorial uses a node.js express app as an example for the demo.
+
+I also created a video to talk about how to fix some of the common CodeDeploy failures I have run into (https://www.youtube.com/watch?v=sXZVkOH6hrA). Below are a couple of examples:
+
+```
+ApplicationStop failed with exit code 1
+```
+
+```
+The overall deployment failed because too many individual instances failed deployment, too few healthy instances are available for deployment, or some instances in your deployment group are experiencing problems.
+```
 
 ===========================
 
@@ -14,24 +26,6 @@ wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
 sudo chmod +x ./install
 sudo ./install auto
 ```
-
-
-#!/bin/bash 
-sudo apt-get update -y
-sudo apt-get -y install ruby
-sudo apt-get -y install wget
-cd /home/ubuntu 
-wget https://aws-codedeploy-us-east-1.s3.amazonaws.com/latest/install
-sudo chmod +x ./install 
-sudo ./install auto
-sudo apt install nginx -y
-sudo service nginx start
-sudo ufw allow 'Nginx HTTP'
-sudo service codedeploy-agent start 
-    
-
-
-
 
 Check if CodeDeploy agent is running:
 ```
